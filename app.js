@@ -7,7 +7,7 @@ Promise.all([
   faceapi.nets.ssdMobilenetv1.loadFromUri(`${localHost}/models`)
 ]).then(start);
 
-async function start() { 
+async function start() {
   document.body.append("Tüm modeller Yüklendi ...");
 
   myImage.addEventListener("change", async () => {
